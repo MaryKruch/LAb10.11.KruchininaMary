@@ -1,0 +1,36 @@
+﻿<Window x:Class="LAb10._11.KruchininaMary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAb10._11.KruchininaMary"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <TabControl>
+        <TabItem Header="Lab10">
+            <Grid>
+                <Grid>
+                    <TextBox x:Name="txtInput" HorizontalAlignment="Left" Height="200" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" AcceptsReturn="True"/>
+                    <Button x:Name="btnFindMin" Content="Найти минимум" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="100" Click="btnFindMin_Click"/>
+                    <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="120,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+                </Grid>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Lab11">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="txtNumbers" Grid.Row="0" Margin="5" AcceptsReturn="True" TextWrapping="Wrap" Text="Ввести некоторое количество вещественных чисел"/>
+                <Button x:Name="btnSaveAndModify" Grid.Row="1" Margin="5" Content="сохранить " Click="btnSaveAndModify_Click"/>
+                <Button x:Name="btnPrint" Grid.Row="2" Margin="5" Content="вывести числа" Click="btnPrint_Click"/>
+                <TextBox x:Name="txtOutput" Grid.Row="3" Margin="5" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>
